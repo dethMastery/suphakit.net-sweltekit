@@ -216,5 +216,6 @@
 
 	.c-cont .donation:hover {
 		opacity: 0.6;
+		cursor: pointer;
 	}
 </style>
