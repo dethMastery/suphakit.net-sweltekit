@@ -15,7 +15,7 @@
 
 
 <svelte:head>
-	<title>Donation | Suphakit P.</title>
+	<title>Payment | Suphakit P.</title>
 </svelte:head>
 
 <section>
@@ -28,7 +28,7 @@
 			<div class="c-cont">
                 <h1>
                     <u>
-                        Donation
+                        Payment
                     </u>
                 </h1>
                 
