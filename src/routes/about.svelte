@@ -3,17 +3,15 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>About | Suphakit P.</title>
 </svelte:head>
 
-<main>
-	
-</main>
+<section>
+
+</section>
 
 <style>
-	.content {
+	section {
 		width: 100%;
-		max-width: var(--column-width);
-		margin: var(--column-margin-top) auto 0 auto;
 	}
 </style>

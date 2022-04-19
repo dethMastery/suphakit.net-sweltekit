@@ -54,9 +54,19 @@
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 		background-color: whitesmoke;
+		color: #2e2f2f;
+	}
+
+	a {
+		text-decoration: none;
 	}
 
 	a li:hover {
 		background-color: rgb(182, 182, 182);
+		color: #2e2f2f;
+	}
+
+	a:hover {
+		text-decoration: none;
 	}
 </style>
