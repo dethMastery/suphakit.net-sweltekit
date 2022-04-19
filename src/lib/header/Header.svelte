@@ -21,6 +21,14 @@
 
 			<li></li>
 
+			<a sveltekit:prefetch href="/donation">
+				<li class:active={$page.url.pathname === '/donation'}>
+					donation
+				</li>
+			</a>
+
+			<li></li>
+
 			<a sveltekit:prefetch href="/about">
 				<li class:active={$page.url.pathname === '/about'}>
 					about
