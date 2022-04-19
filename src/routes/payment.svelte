@@ -32,14 +32,14 @@
                     </u>
                 </h1>
                 
-				{#each dbs[0].donation as donate}
+				{#each dbs[0].payment as pm}
                     <p>
-                        {donate.name} : {donate.target}
+                        {pm.name} : {pm.target}
                     </p>
                 {/each}
                 <br>
                 <p>
-                    {dbs[0].donation[0].uName}
+                    {dbs[0].payment[0].uName}
                 </p>
 			</div>
 		{/await}
@@ -70,8 +70,8 @@
 		padding: .5rem;
 		padding-bottom: .3rem;
 		border-radius: 1rem;
-        
-        margin-top: -1rem;
+
+		margin-top: -1rem;
 	}
 
 	.logo img {
