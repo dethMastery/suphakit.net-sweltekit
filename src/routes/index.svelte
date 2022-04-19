@@ -10,7 +10,7 @@
 	}
 
 	let call = db();
-	let mailto
+	let mailto;
 </script>
 
 <svelte:head>
