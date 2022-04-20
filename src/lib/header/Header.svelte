@@ -77,4 +77,9 @@
 	a:hover {
 		text-decoration: none;
 	}
+
+	.active {
+		background-color: rgb(182, 182, 182);
+		color: #2e2f2f;
+	}
 </style>
