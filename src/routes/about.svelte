@@ -27,7 +27,7 @@
 			Loading..
 		</center>
 	{:then dbs} 
-		<div class="head-class info">
+		<div class="head-class info" id="info">
 			<div class="profile">
 				<img src={dbs[0].proPic} alt="profile pic">
 			</div>
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 
-		<div class="head-class about">
+		<div class="head-class about" id="about">
 			<h1>
 				<u>
 					About
@@ -83,7 +83,7 @@
 			</ul>
 		</div>
 
-		<div class="head-class skill">
+		<div class="head-class skill" id="skill">
 			<h1>
 				<u>
 					Skill
@@ -97,13 +97,17 @@
 							<img src={skl.path} alt={skl.name}>
 						</div>
 						<br>
-						<span>
-							{skl.name}
-						</span>
-						<br>
-						<span>
-							{skl.duration}
-						</span>
+						<div class="skl.data">
+							<span>
+								<b>
+									{skl.name}
+								</b>
+							</span>
+							<br>
+							<span>
+								{skl.duration}
+							</span>
+						</div>
 					</div>
 				{/each}
 			</div>
