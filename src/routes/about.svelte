@@ -23,7 +23,9 @@
 
 <section>
 	{#await call}
-		Loading..
+		<center>
+			Loading..
+		</center>
 	{:then dbs} 
 		<div class="info">
 			<div class="profile">
