@@ -159,7 +159,7 @@
 	<span></span>
 {:then dbs} 
 	<div class="footer">
-		
+		&copy; Copyright 2022 <a sveltekit:prefetch href="https://suphakit.net">Suphakit P.</a>
 	</div>
 {/await}
 
@@ -306,6 +306,25 @@
 
 	.featured .repo-holder .repo-card .repo-info .repo-button:hover {
 		opacity: 0.6;
+	}
+
+	.footer {
+		width: 100%;
+		background-color: whitesmoke;
+		color: #2e2f2f;
+		text-align: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.footer a {
+		color: #2e2f2f;
+		text-decoration: none;
+	}
+
+	.footer a:hover {
+		color: #2e2f2f;
+		text-decoration: underline;
 	}
 
 	@media only screen and (max-width: 700px) {
