@@ -57,7 +57,7 @@
 		<div class="head-class about" id="about">
 			<h1>
 				<u>
-					About
+					About;
 				</u>
 			</h1>
 			
@@ -86,7 +86,7 @@
 		<div class="head-class skill" id="skill">
 			<h1>
 				<u>
-					Skill
+					Skill;
 				</u>
 			</h1>
 
@@ -112,8 +112,56 @@
 				{/each}
 			</div>
 		</div>
+
+		<div class="head-class featured" id="featured">
+			<h1>
+				<u>
+					Featured Repository;
+				</u>
+			</h1>
+
+			<div class="repo-holder">
+				{#each dbs[0].fRepo as repo}
+					<div class="repo-card">
+						<div class="repo-head">
+							<h1>
+								<u>
+									{repo.name}
+								</u>
+								{#if repo.lang != ''}
+									&#183;
+									<span class="lang">
+										{repo.lang}
+									</span>
+								{/if}
+							</h1>
+						</div>
+						<div class="repo-cont">
+							<span>
+								{repo.desp}
+							</span>
+						</div>
+						<div class="repo-info">
+							<a sveltekit:prefetch href={repo.link}>
+								<button class="repo-button">
+									Repository Link >
+								</button>
+							</a>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
 	{/await}
 </section>
+
+{#await call}
+	<span></span>
+{:then dbs} 
+	<div class="footer">
+		
+	</div>
+{/await}
 
 <style>
 	section {
@@ -197,6 +245,67 @@
 	.skill .skl-card .skl-img img {
 		width: 100px;
 		height: 100px;
+	}
+
+	.featured .repo-holder {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.featured .repo-holder .repo-card {
+		background-color: whitesmoke;
+		color: #2e2f2f;
+		border-radius: 10px;
+		width: 20rem;
+	}
+
+	.featured .repo-holder .repo-card .repo-head {
+		width: auto;
+		height: auto;
+
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.featured .repo-holder .repo-card .repo-head .lang {
+		font-size: 15px;
+		color: grey;
+	}
+
+	.featured .repo-holder .repo-card .repo-cont {
+		width: auto;
+		height: 5rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.featured .repo-holder .repo-card .repo-info {
+		width: 100%;
+	}
+
+	.featured .repo-holder .repo-card .repo-info .repo-button {
+		border: none;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+
+		background-color: #2e2f2f;
+		color: whitesmoke;
+
+		width: 100%;
+		height: 100%;
+
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+
+		cursor: pointer;
+	}
+
+	.featured .repo-holder .repo-card .repo-info .repo-button:hover {
+		opacity: 0.6;
 	}
 
 	@media only screen and (max-width: 700px) {
